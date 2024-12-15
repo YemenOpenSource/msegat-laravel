@@ -20,6 +20,7 @@ class Msegat
         $username = Config::get('msegat.username');
         $userSender = Config::get('msegat.user_sender');
         $apiKey = Config::get('msegat.api_key');
+        $numbers =  implode(',', $numbers);
 
         $payload = [
             "userName" => $username,
